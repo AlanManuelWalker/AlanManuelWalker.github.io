@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    
+    <!-- Bootstrap CSS import-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bootstrap Bundle JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+    <!-- Custom JavaScript-->
+    <script src="js/script.js"></script>
+    
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar (reused from main page)-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar-navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">Alan Walker Barbadillo</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="documentation.html">Back to Top</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bootstrap">Content</a></li>
+                </ul>
+            </div>
+            <div class="progress-container" style="width: 10vw">
+                <div class="progress-bar" id="progressBar" ></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section for Documentation-->
+    <section id="home" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-12 hero-content text-center">
+                    <div class="hero-text">
+                        <a href="index.html" class="back-to-portfolio">
+                            <i class="bi bi-arrow-left"></i> Back to Portfolio
+                        </a>
+                        <p class="text-gradient mb-2">TECHNICAL DOCUMENTATION</p>
+                        <h1 class="display-3 fw-bold mb-3">Bootstrap & JavaScript Features</h1>
+                        <p class="lead mb-4">Complete breakdown of components and dynamic features used in the portfolio</p>
+                        <p class="hero-description">This page documents all Bootstrap components and custom JavaScript functionality implemented in my portfolio website. Each component is detailed with its usage and implementation specifics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Content-->
+    <section id="documentation" class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Bootstrap Components Column-->
+                <div class="col-lg-6" id="bootstrap">
+                    <div class="component-card">
+                        <div class="component-header">
+                            <div class="component-icon">
+                                <i class="bi bi-bootstrap-fill"></i>
+                            </div>
+                            <h2>Bootstrap Components</h2>
+                        </div>
+                        <p class="text-secondary mb-4">The portfolio utilizes Bootstrap 5.3.8 for responsive design and pre-styled components. Below is a comprehensive list of all Bootstrap components implemented.</p>
+                        
+                        <!-- Navigation Components-->
+                        <div class="mb-4">
+                            <h4 class="mb-3">Navigation Components</h4>
+                            <ul class="component-list">
+                                <li>
+                                    <strong>Navbar</strong>
+                                    <div class="mt-1">
+                                        <span class="feature-badge">Fixed Top</span>
+                                        <span class="feature-badge">Responsive</span>
+                                        <span class="feature-badge">Dark Theme</span>
+                                    </div>
+                                    <p class="small mt-1 mb-0">Responsive navigation bar with collapse functionality for mobile devices.</p>
+                                    <div class="code-example mt-2">
+                                        &lt;nav class="navbar navbar-expand-lg navbar-dark fixed-top"&gt;
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Navbar Toggler</strong>
+                                    <p class="small mt-1 mb-0">Collapsible menu button for mobile navigation.</p>
+                                </li>
+                                <li>
+                                    <strong>Nav Pills</strong>
+                                    <div class="mt-1">
+                                        <span class="feature-badge">Tab Navigation</span>
+                                        <span class="feature-badge">Dynamic Content</span>
+                                    </div>
+                                    <p class="small mt-1 mb-0">Used in Education section for year selection tabs.</p>
+                                    <div class="code-example mt-2">
+                                        &lt;ul class="nav nav-pills module-tabs" role="tablist"&gt;
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Layout Components-->
+                        <div class="mb-4">
+                            <h4 class="mb-3">Layout Components</h4>
+                            <ul class="component-list">
+                                <li>
+                                    <strong>Container & Grid System</strong>
+                                    <div class="mt-1">
+                                        <span class="feature-badge">Responsive Grid</span>
+                                        <span class="feature-badge">Breakpoints</span>
+                                    </div>
+                                    <p class="small mt-1 mb-0">Bootstrap's 12-column grid system with responsive breakpoints.</p>
+                                </li>
+                                <li>
+                                    <strong>Rows & Columns</strong>
+                                    <p class="small mt-1 mb-0">Extensive use of .row and .col classes for layout structuring.</p>
+                                </li>
+                                <li>
+                                    <strong>Spacing Utilities</strong>
+                                    <p class="small mt-1 mb-0">Margin and padding utilities (m-, p-, g- classes) throughout.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Interactive Components-->
+                        <div class="mb-4">
+                            <h4 class="mb-3">Interactive Components</h4>
+                            <ul class="component-list">
+                                <li>
+                                    <strong>Modal</strong>
+                                    <div class="mt-1">
+                                        <span class="feature-badge">Contact Info</span>
+                                        <span class="feature-badge">Centered</span>
+                                    </div>
+                                    <p class="small mt-1 mb-0">Modal dialog for displaying contact information.</p>
+                                    <div class="code-example mt-2">
+                                        &lt;div class="modal fade" id="contactModal" tabindex="-1"&gt;
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Buttons</strong>
+                                    <div class="mt-1">
+                                        <span class="feature-badge">Primary</span>
+                                        <span class="feature-badge">Outline</span>
+                                        <span class="feature-badge">Large Size</span>
+                                    </div>
+                                    <p class="small mt-1 mb-0">Styled buttons with various states and sizes.</p>
+                                </li>
+                                <li>
+                                    <strong>Progress Bar</strong>
+                                    <div class="mt-1">
+                                        <span class="feature-badge">Custom Styled</span>
+                                        <span class="feature-badge">Dynamic</span>
+                                    </div>
+                                    <p class="small mt-1 mb-0">Custom progress bar in navigation (enhanced with JS).</p>
+                                    <div class="code-example mt-2">
+                                        &lt;div class="progress-bar" id="progressBar"&gt;&lt;/div&gt;
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Grades</strong>
+                                    <div class="mt-1">
+                                        <span class="feature-badge">Tabs</span>
+                                        <span class="feature-badge">Pills</span>
+                                    </div>
+                                    <p class="small mt-1 mb-0">TU Dublin education section switches between the years using bootstrap functionality.</p>
+                                    <div class="code-example mt-2">
+                                        &lt;button class="nav-link active" data-bs-toggle="pill" data-bs-target="#year4" type="button" role="tab"&gt;
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Badges</strong>
+                                    <p class="small mt-1 mb-0">Used for grades, tech stack labels, and achievement tags.</p>
+                                </li>
+                                <li>
+                                    <strong>Forms</strong>
+                                    <div class="mt-1">
+                                        <span class="feature-badge">Contact Form</span>
+                                        <span class="feature-badge">Validation</span>
+                                    </div>
+                                    <p class="small mt-1 mb-0">Contact form with input validation.</p>
+                                </li>
+                                <li>
+                                    <strong>Cards</strong>
+                                    <div class="mt-1">
+                                        <span class="feature-badge">Multiple Variants</span>
+                                        <span class="feature-badge">Hover Effects</span>
+                                    </div>
+                                    <p class="small mt-1 mb-0">Extensively used for project cards, info cards, etc.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Content Components-->
+                        <div class="mb-4">
+                            <h4 class="mb-3">Content Components</h4>
+                            <ul class="component-list">
+                                <li>
+                                    <strong>Typography</strong>
+                                    <p class="small mt-1 mb-0">Bootstrap typography classes (display-, lead, etc.).</p>
+                                </li>
+                                <li>
+                                    <strong>Tab Content</strong>
+                                    <div class="mt-1">
+                                        <span class="feature-badge">Dynamic Switching</span>
+                                    </div>
+                                    <p class="small mt-1 mb-0">Tab panes for education year content.</p>
+                                    <div class="code-example mt-2">
+                                        &lt;div class="tab-content"&gt;&lt;div class="tab-pane fade"&gt;
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Timeline</strong>
+                                    <p class="small mt-1 mb-0">Custom timeline implementation for experience section.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Bootstrap Icons-->
+                        <div class="mb-4">
+                            <h4 class="mb-3">Bootstrap Icons</h4>
+                            <p class="small">Extensive use of Bootstrap Icons throughout the portfolio for visual elements:</p>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="tech-badge"><i class="bi bi-person-badge"></i> Person Badge</span>
+                                <span class="tech-badge"><i class="bi bi-lightning-charge"></i> Lightning</span>
+                                <span class="tech-badge"><i class="bi bi-mortarboard-fill"></i> Graduation</span>
+                                <span class="tech-badge"><i class="bi bi-code-square"></i> Code</span>
+                                <span class="tech-badge"><i class="bi bi-cloud-arrow-up"></i> Cloud</span>
+                                <span class="tech-badge"><i class="bi bi-trophy"></i> Trophy</span>
+                                <span class="tech-badge"><i class="bi bi-envelope-fill"></i> Email</span>
+                            </div>
+                        </div>
+                        
+                        <div class="usage-note">
+                            <strong>Bootstrap Version:</strong> 5.3.8<br>
+                            <strong>CDN Source:</strong> jsdelivr.net<br>
+                            <strong>Responsive Breakpoints:</strong> xs, sm, md, lg, xl, xxl<br>
+                            <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" class="doc-link" target="_blank">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> Official Bootstrap Documentation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- JavaScript Features Column-->
+                <div class="col-lg-6" id="javascript">
+                    <div class="component-card">
+                        <div class="component-header">
+                            <div class="component-icon">
+                                <i class="bi bi-filetype-js"></i>
+                            </div>
+                            <h2>JavaScript Features</h2>
+                        </div>
+                        <p class="text-secondary mb-4">Custom JavaScript functionality that enhances user experience and adds dynamic behavior to the portfolio.</p>
+                        
+                        <!-- Core JavaScript Functions-->
+                        <div class="mb-4">
+                            <h4 class="mb-3">Core Functions</h4>
+                            <ul class="component-list">
+                                <li>
+                                    <strong>DOMContentLoaded Event Listener</strong>
+                                    <div class="mt-1">
+                                        <span class="feature-badge">Page Initialization</span>
+                                    </div>
+                                    <p class="small mt-1 mb-0">Ensures JavaScript executes only after the DOM is fully loaded.</p>
+                                    <div class="code-example mt-2">
+                                        document.addEventListener('DOMContentLoaded', function() {<br>
+                                        &nbsp;&nbsp;// Initialization code here<br>
+                                        });
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Dynamic Footer Date</strong>
+                                    <div class="mt-1">
+                                        <span class="feature-badge">Date Object</span>
+                                        <span class="feature-badge">DOM Manipulation</span>
+                                    </div>
+                                    <p class="small mt-1 mb-0">Automatically updates the year in the footer.</p>
+                                    <div class="code-example mt-2">
+                                        document.getElementById("dateChange").innerText = <br>
+                                        &nbsp;&nbsp;new Date().getFullYear() + " Alan Walker Barbadillo...";
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Scroll Progress Bar</strong>
+                                    <div class="mt-1">
+                                        <span class="feature-badge">Window Scroll Event</span>
+                                        <span class="feature-badge">Real-time Updates</span>
+                                        <span class="feature-badge">CSS Manipulation</span>
+                                    </div>
+                                    <p class="small mt-1 mb-0">Dynamic progress bar that shows scrolling progress through the page.</p>
+                                    <div class="code-example mt-2">
+                                        window.onscroll = function() {updatesScrollBar()};<br><br>
+                                        function updatesScrollBar() {<br>
+                                        &nbsp;&nbsp;var windowScroll = document.body.scrollTop || <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;document.documentElement.scrollTop;<br>
+                                        &nbsp;&nbsp;var height = document.documentElement.scrollHeight - <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;document.documentElement.clientHeight;<br>
+                                        &nbsp;&nbsp;var scrolled = (windowScroll / height) * 100;<br>
+                                        &nbsp;&nbsp;document.getElementById("progressBar").style.width = <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;scrolled + "%";<br>
+                                        }
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Interactive Features-->
+                        <div class="mb-4">
+                            <h4 class="mb-3">Interactive Features</h4>
+                            <ul class="component-list">
+                                <li>
+                                    <strong>Email Functionality</strong>
+                                    <div class="mt-1">
+                                        <span class="feature-badge">Form Processing</span>
+                                        <span class="feature-badge">mailto: Protocol</span>
+                                        <span class="feature-badge">URL Encoding</span>
+                                    </div>
+                                    <p class="small mt-1 mb-0">Processes contact form data and opens default email client.</p>
+                                    <div class="code-example mt-2">
+                                        function sendEmail() {<br>
+                                        &nbsp;&nbsp;var name = document.getElementById("name").value;<br>
+                                        &nbsp;&nbsp;var email = document.getElementById("email").value;<br>
+                                        &nbsp;&nbsp;var subject = document.getElementById("subject").value;<br>
+                                        &nbsp;&nbsp;var message = document.getElementById("message").value;<br><br>
+                                        &nbsp;&nbsp;var mailtoLink = "mailto:x00204054@mytudublin.ie" + <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;"?subject=" + encodeURIComponent(subjectLine) +<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;"&body=" + encodeURIComponent(bodyContent);<br><br>
+                                        &nbsp;&nbsp;window.location.href = mailtoLink;<br>
+                                        }
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Console Logging</strong>
+                                    <div class="mt-1">
+                                        <span class="feature-badge">Debugging</span>
+                                        <span class="feature-badge">User Feedback</span>
+                                    </div>
+                                    <p class="small mt-1 mb-0">Debug messages logged to console for development tracking.</p>
+                                    <div class="code-example mt-2">
+                                        console.log("date changed appropriately. footer now displays " + <br>
+                                        &nbsp;&nbsp;document.getElementById("dateChange").innerText);
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Bootstrap JS Integration-->
+                        <div class="mb-4">
+                            <h4 class="mb-3">Bootstrap JavaScript Integration</h4>
+                            <ul class="component-list">
+                                <li>
+                                    <strong>Modal Activation</strong>
+                                    <p class="small mt-1 mb-0">Buttons with data-bs-toggle="modal" attributes trigger Bootstrap modals.</p>
+                                    <div class="code-example mt-2">
+                                        &lt;button data-bs-toggle="modal" data-bs-target="#contactModal"&gt;
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Tab Switching</strong>
+                                    <p class="small mt-1 mb-0">Nav pills with data-bs-toggle="pill" enable tab content switching.</p>
+                                    <div class="code-example mt-2">
+                                        &lt;button class="nav-link" data-bs-toggle="pill" <br>
+                                        &nbsp;&nbsp;data-bs-target="#year1" type="button"&gt;
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Navbar Toggler</strong>
+                                    <p class="small mt-1 mb-0">Bootstrap's collapse.js handles navbar expansion on mobile.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Event Handling-->
+                        <div class="mb-4">
+                            <h4 class="mb-3">Event Handling</h4>
+                            <ul class="component-list">
+                                <li>
+                                    <strong>Scroll Event</strong>
+                                    <p class="small mt-1 mb-0">Tracks window scrolling for progress bar updates.</p>
+                                </li>
+                                <li>
+                                    <strong>Click Events</strong>
+                                    <p class="small mt-1 mb-0">Form submission buttons trigger email functionality.</p>
+                                </li>
+                                <li>
+                                    <strong>DOM Ready Event</strong>
+                                    <p class="small mt-1 mb-0">Initializes features when page is ready.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- CSS Manipulation-->
+                        <div class="mb-4">
+                            <h4 class="mb-3">CSS Manipulation</h4>
+                            <ul class="component-list">
+                                <li>
+                                    <strong>Inline Style Updates</strong>
+                                    <p class="small mt-1 mb-0">Progress bar width dynamically adjusted based on scroll position.</p>
+                                </li>
+                                <li>
+                                    <strong>Text Content Updates</strong>
+                                    <p class="small mt-1 mb-0">Footer text dynamically updated with current year.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="usage-note">
+                            <strong>JavaScript Features:</strong> Vanilla JS (no additional libraries)<br>
+                            <strong>Event Types:</strong> DOMContentLoaded, scroll, click<br>
+                            <strong>DOM Methods:</strong> getElementById, addEventListener<br>
+                            <strong>Browser APIs:</strong> Date, Window.location, Console.Log<br>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="doc-link" target="_blank">
+                                <i class="bi bi-box-arrow-up-right me-1"></i> MDN JavaScript Documentation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="mb-2" id="dateChange">(JS isn't loaded) Alan Walker Barbadillo</p>
+                    <p class="footer-text">Technical Documentation - Bootstrap Components & JavaScript Features</p>
+                    <p class="footer-tech mt-2">
+                        <span class="tech-badge-small">Bootstrap 5.3.8</span>
+                        <span class="tech-badge-small">JavaScript</span>
+                        <span class="tech-badge-small">CSS3</span>
+                        <span class="tech-badge-small">HTML5</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
