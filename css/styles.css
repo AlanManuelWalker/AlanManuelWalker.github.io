@@ -68,6 +68,14 @@ img {
 
 /* navigation styles */
 
+/*progress bar styling*/
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+}
+
+
 .navbar {
     background: linear-gradient(135deg, rgba(10, 14, 26, 0.95), rgba(20, 24, 36, 0.95));
     backdrop-filter: blur(10px);
@@ -672,7 +680,7 @@ img {
 }
 
 .experience-highlights li::before {
-    content: '▹';
+    content: '-';
     position: absolute;
     left: 0;
     color: var(--accent-cyan);
@@ -782,7 +790,7 @@ img {
 
 .project-features li::before,
 .challenges-section li::before {
-    content: '▹';
+    content: '-';
     position: absolute;
     left: 0;
     color: var(--accent-cyan);
